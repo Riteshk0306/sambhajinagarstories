@@ -39,7 +39,7 @@
             theme: {
                 extend: {
                     animation: {
-                        'marquee': 'marquee 12s linear infinite',
+                        'marquee': 'marquee 20s linear infinite',
                     },
                     keyframes: {
                         marquee: {
@@ -318,63 +318,53 @@
 
         <section id="about" class="py-20 px-4 sm:px-6 bg-[#121212]">
             <div class="container mx-auto">
-                <div data-aos="fade-up" class="mb-12">
-                    <h2 class="font-headline text-4xl sm:text-5xl font-bold text-center text-brand-dark">About Us</h2>
+                <div data-aos="fade-up" class="text-center mb-16">
+                    <p class="text-sm uppercase tracking-[0.2em] text-brand-yellow font-semibold mb-2">Leadership</p>
+                    <h2 class="font-headline text-4xl sm:text-5xl font-bold text-brand-dark">About Us</h2>
+                    <p class="text-gray-400 mt-3 max-w-2xl mx-auto">The creative visionaries and strategists driving Sambhajinagar Stories forward.</p>
                 </div>
-                <div class="grid md:grid-cols-12 gap-12 items-center" data-aos="fade-up">
-                    <div class="md:col-span-5 flex justify-center">
-                        <div class="relative">
-                            <img src="IMG_7295.JPG" alt="Aakash Bhutekar" class="rounded-2xl w-full max-w-sm shadow-xl">
 
+                <div class="space-y-16 max-w-5xl mx-auto">
+                    <!-- Aakash Bhutekar (Founder) -->
+                    <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-center bg-[#1a1a1a]/60 border border-gray-800/80 rounded-3xl p-6 sm:p-10 backdrop-blur-sm shadow-2xl" data-aos="fade-up">
+                        <div class="md:col-span-5 flex justify-center">
+                            <div class="relative group">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-brand-yellow to-amber-600 rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-500"></div>
+                                <img src="akash.jpg" alt="Aakash Bhutekar" class="relative rounded-2xl w-full max-w-xs h-80 sm:h-96 object-cover object-top shadow-xl border border-gray-700/50">
+                            </div>
+                        </div>
+                        <div class="md:col-span-7 flex flex-col justify-center text-center md:text-left">
+                            <span class="inline-block px-3 py-1 bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow font-semibold text-xs tracking-wider uppercase rounded-full w-max mx-auto md:mx-0 mb-3">Founder</span>
+                            <h3 class="font-headline text-3xl sm:text-4xl font-bold text-brand-dark">Aakash Bhutekar</h3>
+                            <p class="text-gray-400 leading-relaxed mt-4 text-base sm:text-lg">
+                                Every city has a rhythm, a story, and a soul. As a city explorer, I travel through streets,
+                                markets, and landmarks to capture authentic moments that define urban life. Through
+                                creativity and passion, I turn city journeys into compelling visual experiences that
+                                celebrate culture, movement, and discovery.
+                            </p>
                         </div>
                     </div>
-                    <div class="md:col-span-7">
-                        <h3 class="font-headline text-4xl font-bold text-brand-dark">Aakash Bhutekar</h3>
-                        <p class="text-xl font text-brand-yellow-light mt-1 mb-4">Founder</p>
-                        <p class="text-gray-400 leading-relaxed mb-6">
-                            Every city has a rhythm, a story, and a soul. As a city explorer, I travel through streets,
-                            markets, and landmarks to capture authentic moments that define urban life. Through
-                            creativity and passion, I turn city journeys into compelling visual experiences that
-                            celebrate culture, movement, and discovery.
-                        </p>
-                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
 
+                    <!-- Ritesh Kathar (Co-Founder) -->
+                    <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-center bg-[#1a1a1a]/60 border border-gray-800/80 rounded-3xl p-6 sm:p-10 backdrop-blur-sm shadow-2xl" data-aos="fade-up" data-aos-delay="150">
+                        <div class="md:col-span-5 flex justify-center md:order-last">
+                            <div class="relative group">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-brand-yellow to-amber-600 rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-500"></div>
+                                <img src="Ritesh.jpeg" alt="Ritesh Kathar" class="relative rounded-2xl w-full max-w-xs h-80 sm:h-96 object-cover object-top shadow-xl border border-gray-700/50">
+                            </div>
+                        </div>
+                        <div class="md:col-span-7 flex flex-col justify-center text-center md:text-left">
+                            <span class="inline-block px-3 py-1 bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow font-semibold text-xs tracking-wider uppercase rounded-full w-max mx-auto md:mx-0 mb-3">Co-Founder</span>
+                            <h3 class="font-headline text-3xl sm:text-4xl font-bold text-brand-dark">Ritesh Kathar</h3>
+                            <p class="text-gray-400 leading-relaxed mt-4 text-base sm:text-lg">
+                                As the Co-Owner of Sambhajinagar Stories, I handle operations, planning, finance, and
+                                logistics, ensuring that every city exploration and brand campaign is well-organized and successfully executed.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="py-20 px-4 sm:px-6 bg-[#121212]">
-            <div class="container mx-auto">
-                <div data-aos="fade-up" class="mb-12">
-                    <h2 class="font-headline text-4xl sm:text-5xl font-bold text-center text-brand-dark"></h2>
-                </div>
-                <div class="grid md:grid-cols-12 gap-12 items-center" data-aos="fade-up">
-                    <div class="md:col-span-5 flex justify-center">
-                        <div class="relative">
-                            <img src="Ritesh.jpeg" alt="Ritesh Kathar" class="rounded-2xl w-full max-w-sm shadow-xl">
-
-                        </div>
-                    </div>
-                    <div class="md:col-span-7">
-                        <h3 class="font-headline text-4xl font-bold text-brand-dark">Ritesh Kathar</h3>
-                        <p class="text-xl font text-brand-yellow-light mt-1 mb-4">Co-Founder</p>
-                        <p class="text-gray-400 leading-relaxed mb-6">
-                            As the Co-Owner of Sambhajinagar.stories, I handle operations, planning, finance, and
-                            logistics, ensuring that every city exploration is well-organized and successfully executed.
-                        </p>
-                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Centered Signature -->
-
-
-    </div>
-    </section>
     <footer class="py-12 border-t border-gray-800">
 
         <div class="flex flex-col items-center justify-center w-full mt-10 gap-6">
