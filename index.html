@@ -4,7 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sambhajinagar Stories - A Visual Masterpiece</title>
+    <title>Chhatrapati Sambhajinagar Stories | #1 Social Media Promotion Page</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Discover Chhatrapati Sambhajinagar's top social media page! We are the best promotion page for advertising city-basis shops and brands. Get the latest updates of Sambhajinagar.">
+    <meta name="keywords" content="sambhajinagar, chhatrapatisambhajinagar, sambhajinagar social media page, sambhajinagar promotion page, advertising in the city, brands for the chhatrapati sambhajinagar city, update of sambhajinagar">
+    <meta name="author" content="Sambhajinagar Stories">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, Instagram, WhatsApp) -->
+    <meta property="og:title" content="Chhatrapati Sambhajinagar Stories | Top Promotion Page">
+    <meta property="og:description" content="Boost your brand in Chhatrapati Sambhajinagar. Best local social media advertising, city updates, and business promotion.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://www.sambhajinagarstories.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chhatrapati Sambhajinagar Stories | Top Promotion Page">
+    <meta name="twitter:description" content="Boost your brand in Chhatrapati Sambhajinagar. Best local social media advertising, city updates, and business promotion.">
+    <meta name="twitter:image" content="logo.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +38,15 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    animation: {
+                        'marquee': 'marquee 12s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    },
                     colors: {
                         'brand-yellow': {
                             light: '#FBBF24',
@@ -193,6 +221,25 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trusted-brands" class="py-16 bg-[#121212] border-t border-b border-gray-800/50 overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div data-aos="fade-up" class="text-center mb-12">
+                    <p class="text-sm uppercase tracking-[0.2em] text-brand-yellow font-semibold mb-2">Collaborations</p>
+                    <h2 class="font-headline text-3xl sm:text-4xl font-bold text-brand-dark">Brands We've Elevated</h2>
+                </div>
+            </div>
+
+            <div class="w-full relative py-4" data-aos="fade-up" data-aos-delay="200">
+                <!-- Fade out gradients on edges for a premium marquee effect -->
+                <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#121212] to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#121212] to-transparent z-10 pointer-events-none"></div>
+
+                <div id="marquee-brands-container" class="flex w-max animate-marquee gap-16 md:gap-24 lg:gap-32 hover:[animation-play-state:paused] px-10 items-center">
+                    <!-- Brands will be automatically injected here by brands.js -->
                 </div>
             </div>
         </section>
@@ -520,6 +567,7 @@
             }
         });
     </script>
+    <script src="brands.js"></script>
 </body>
 
 </html>
